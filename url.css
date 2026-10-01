@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightyellow;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue !important;
+}
+
+#submitBtn {
+    background-color: dodgerblue;
+    color: white;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lightgray;
+}
+
+.old-btn {
+    background: red;
+    color: yellow;
+}
