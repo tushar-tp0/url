@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> My URL Shortener </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='url.css') }}">
+</head>
+<body>
 
+    <center>
+    <h1>🔗 URL Shortener</h1>
+    <p>made by me for the GDG recruitment task</p>
+    </center>
+
+    <div class="box" id="formBox">
+        <form method="POST" action="/">
+            <input type="text" name="url" id="url-input" placeholder="Paste your long url here" style="width:250px;"><br><br>
+            <input type="text" name="alias" placeholder="Custom alias (optional)"><br><br>
+            <button type="submit" id="submitBtn">Shorten it!</button>
+        </form>
+
+        {% if error %}
+        <p style="color:red;">{{ error }}</p>
+        {% endif %}
+    </div>
+
+    <br>
+
+    <h2>All shortened links:</h2>
+
+    {% if urls %}
+    <table border="1" cellpadding="8" id="linksTable">
+        <tr>
+            <th>Short Code</th>
+            <th>Original URL</th>
+            <th>Clicks</th>
+        </tr>
+        {% for code, info in urls.items() %}
+        <tr>
+            <td><a href="/{{ code }}">{{ code }}</a></td>
+            <td>{{ info.original }}</td>
+            <td>{{ info.clicks }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No links yet, add one above!</p>
+    {% endif %}
+
+</body>
+</html>
