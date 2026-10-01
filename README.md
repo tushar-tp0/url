@@ -29,7 +29,7 @@ Then open http://127.0.0.1:5000 in your browser.
 - `main.py`: the backend using flask
 - `templates/index.html`: the home page
 - `static/url.css`: the styling for buttons, text and also for layouts
-- `requirements.txt`: just Flask
+- `requirements.txt`: just Flask and gunicorn
 
 ## What I learned
 Flask was picky about folders. my page shows errors until i put html and css in seprate template ans staic folder. I also got stuck in `startswith` bug,
