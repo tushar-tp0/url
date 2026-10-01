@@ -1,6 +1,6 @@
-#URL SHORTNER 
+# URL SHORTNER 
 
-##WHAT IT IS
+## WHAT IT IS
  It is a url shortner i built using flask , HTML , and CSS . you paste a long link in this and it gives you shorter link that redirects to the original.
 
 ## Features
@@ -14,7 +14,7 @@
 Install Flask:
 
 ```
-pip install -r requirements.txt
+pip install -r requirement.txt
 ```
 
 Start the app:
