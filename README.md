@@ -2,6 +2,7 @@
 
 ## WHAT IT IS
  It is a url shortner i built using flask , HTML , and CSS . you paste a long link in this and it gives you shorter link that redirects to the original.
+ **live demo:** https://url-siwy.onrender.com
 
 ## Features
 - Turns a long URL into a random 6 character code
@@ -23,7 +24,7 @@ Start the app:
 python main.py
 ```
 
-Then open http://127.0.0.1:5000 in your browser.
+Then open http://127.0.0.1:5000 in your browser if you are using live server.
 
 ## Files
 - `main.py`: the backend using flask
